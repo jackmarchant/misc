@@ -1,6 +1,7 @@
 # Misc
 
-**TODO: Add description**
+Some arithmetic functions in Elixir to start to get used to the syntax.
+Also includes a SumList module, which uses recursion to sum numbers in a list.
 
 ## Installation
 
