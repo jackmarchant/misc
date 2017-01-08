@@ -3,7 +3,7 @@ defmodule Misc.Mixfile do
 
   def project do
     [app: :misc,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -21,7 +21,7 @@ defmodule Misc.Mixfile do
 
   defp description do
     """
-    Some arithmetic functions in Elixir to start to get used to the syntax. Also includes a SumList module, which uses recursion to sum numbers in a list.
+    - Some miscellaneous functions in Elixir to start to get used to the syntax and functional programming style.
     """
   end
 
