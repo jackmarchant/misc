@@ -19,35 +19,23 @@ defmodule Date do
     This function will get the date from a tuple
     containing the date and time
   """
-  def date(d) do
-    elem(d, 0)
-  end
-
-  @doc """
-    This function will construct the date object as a string
-
-    Examples:
-      iex> Date.fmt({2017, 1, 8})
-      "8/1/2017"
-  """
-  def fmt(d) do
-    fmt(d, "/")
+  def date({d, _}) do
+    d
   end
 
   @doc """
     This function will construct the date object as a string,
-    including a separator for each date integer
+    including a separator for each date integer.
 
     Examples:
       iex> Date.fmt({2017, 1, 8}, "-")
       "8-1-2017"
   """
-  def fmt(d, s) do
+  def fmt(d, s \\ "/") do
     Enum.join([
       elem(d, 2), s,
       elem(d, 1), s,
       elem(d, 0)
     ])
   end
-
 end
